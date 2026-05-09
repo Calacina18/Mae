@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Presente Digital</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#ff4d6d">
+</head>
+<body>
+
+  <canvas id="confetti"></canvas>
+
+  <header class="hero">
+    <h1>Um Presente Feito com Carinho</h1>
+    <p>Memórias, vales, flores e receitas especiais em um só lugar.</p>
+    <a href="#memorias">Começar</a>
+  </header>
+<section id="memorias" class="section reveal">
+  <h2>Nossa Linha do Tempo</h2>
+  <p class="subtitle">Cada foto guarda um pedacinho da nossa história.</p>
+
+  <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-content foto-card" data-title="Primeiro Momento" data-text="Aqui começou uma lembrança muito especial.">
+        <img src="foto1.png" alt="Memória 1">
+        <h3>Primeiro Momento</h3>
+        <span>Abril 2014</span>
+      </div>
+    </div>
+
+    <div class="timeline-item right">
+      <div class="timeline-content foto-card" data-title="Dia Inesquecível" data-text="Um daqueles dias que ficam para sempre no coração.">
+        <img src="foto2.png" alt="Memória 2">
+        <h3>Dia Inesquecível</h3>
+        <span>Abril 2020</span>
+      </div>
+    </div>
+
+    <div class="timeline-item left">
+      <div class="timeline-content foto-card" data-title="Nossa Alegria" data-text="Uma memória cheia de sorrisos, carinho e felicidade.">
+        <img src="foto3.png" alt="Memória 3">
+        <h3>Nossa Alegria</h3>
+        <span>Abril 2020</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item right">
+      <div class="timeline-content foto-card" data-title="Primeiro Momento" data-text="Aqui começou uma lembrança muito especial.">
+        <img src="foto4.png" alt="Memória 1">
+        <h3>Primeiro Momento</h3>
+        <span>Abril 2021</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-content foto-card" data-title="Primeiro Momento" data-text="Aqui começou uma lembrança muito especial.">
+        <img src="foto5.png" alt="Memória 1">
+        <h3>Primeiro Momento</h3>
+        <span>Dezembro 2023</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+    <div class="timeline-item right">
+      <div class="timeline-content foto-card" data-title="Primeiro Momento" data-text="Aqui começou uma lembrança muito especial.">
+        <img src="foto6.png" alt="Memória 1">
+        <h3>Primeiro Momento</h3>
+        <span>Dezembro 2023</span>
+      </div>
+    </div>
+
+    <div class="timeline">
+    <div class="timeline-item left">
+      <div class="timeline-content foto-card" data-title="Primeiro Momento" data-text="Aqui começou uma lembrança muito especial.">
+        <img src="foto7.png" alt="Memória 1">
+        <h3>Primeiro Momento</h3>
+        <span>Janeiro 2026</span>
+      </div>
+    </div>
+</section>
+
+<section class="poema reveal">
+  <div class="poema-box">
+    <h2>Para Você 💖</h2>
+
+    <p>
+      Entre linhas de código e memórias guardadas,<br>
+      existem sentimentos que palavras quase não explicam.<br><br>
+
+      Cada foto aqui carrega um pedaço da nossa história,<br>
+      cada detalhe foi feito com carinho,<br>
+      porque algumas pessoas merecem algo além do comum.<br><br>
+
+      Você é como uma lembrança bonita<br>
+      que o tempo nunca consegue apagar.<br><br>
+
+      E se um dia perguntarem onde mora o amor,<br>
+      talvez ele esteja escondido<br>
+      nos pequenos momentos que vivemos juntos.
+    </p>
+  </div>
+</section>
+
+  <div class="modal" id="modal">
+    <div class="modal-content">
+      <span id="fechar">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+    </div>
+  </div>
+
+  <section class="section reveal">
+    <h2>Vale-Presentes Interativos</h2>
+
+    <div class="cupons">
+      <div class="cupom">
+        <div class="card-inner">
+          <div class="card-front">Vale um Jantar</div>
+          <div class="card-back">
+            <p>Resgate quando quiser!</p>
+            <button onclick="resgatar()">Resgatar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cupom">
+        <div class="card-inner">
+          <div class="card-front">Vale um Dia de Descanso</div>
+          <div class="card-back">
+            <p>Você merece relaxar.</p>
+            <button onclick="resgatar()">Resgatar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="cupom">
+        <div class="card-inner">
+          <div class="card-front">Vale um Abraço</div>
+          <div class="card-back">
+            <p>Disponível todos os dias.</p>
+            <button onclick="resgatar()">Resgatar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section flor-section reveal">
+  <h2>Flor de Código</h2>
+  <p class="subtitle">
+    Algumas flores não nascem na terra... algumas florescem no coração.
+  </p>
+
+  <div class="flor-container">
+
+    <div class="flor" id="flor">
+      <div class="petala p1"></div>
+      <div class="petala p2"></div>
+      <div class="petala p3"></div>
+      <div class="petala p4"></div>
+
+      <div class="miolo"></div>
+      <div class="caule"></div>
+
+      <div class="folha folha1"></div>
+      <div class="folha folha2"></div>
+    </div>
+
+    <div class="mensagem-flor" id="mensagemFlor">
+      Você é uma das partes mais bonitas da minha vida 💖
+    </div>
+
+  </div>
+
+  <button class="btn" onclick="abrirFlor()">
+    Desabrochar Flor
+  </button>
+</section>
+
+  <section class="section reveal">
+    <div class="receitas" id="receitas"></div>
+  </section>
+
+  <footer>
+    <p>Feito com carinho, código e amor.</p>
+  </footer>
+
+  <script src="script,.js"></script>
+</body>
+</html>
